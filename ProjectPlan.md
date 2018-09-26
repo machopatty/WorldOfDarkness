@@ -6,7 +6,7 @@
 - [x] Add link to list of indie projects in student repo.
 - [x] Complete Problem Statement
 - [ ] Determine possible Web Services or APIs to use
-- [ ] List technologies, versions and how they will be used Not sure I really understan this.
+- [ ] List technologies, versions and how they will be used.  Not sure I really understan this.
 - [ ] Weekly journal entry  - kinda forgot this at all.
 - [ ] Write project plan  - can I really check this off while I'm doing it?
 - [ ] Document application flow in text and pictures - I'll use wireframes that have clickable links for the screen design. Use Balsamiq? 
