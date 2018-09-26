@@ -6,3 +6,16 @@ Running games across several environments makes coordinating with players for ch
 
 This project is just beginning.  Currently having no real content at all.
 
+* Security/Roles
+  * Admin Role - CRUD all items except roles.
+  * GM - create games, add XP to characters, approve characters.
+  * Player - crud own characters.
+  
+* web design
+   * CSS
+   * Bootstrap
+   
+ * Need to do the email thing as well.
+   
+
+
