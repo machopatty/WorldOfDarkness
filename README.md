@@ -1,4 +1,4 @@
-# The World of Darkness: ## 2020
+# The World of Darkness: 2020
 
 ## Problem Statement
 
