@@ -23,14 +23,17 @@ This project is just beginning.  Currently having no real content at all.
      * Java Script
      * HTML 5      
      * Need to do the email thing as well.
-  * Dependency Management
-    * Maven
-  * IDE
-    * intelij IDEA
-  * Logging
-    * Log4j 
-  * Unit Testing
-    * JUnit - 80% code coverage goal
+   * Dependency Management
+     * Maven
+   * IDE
+     * intelij IDEA
+   * Logging
+     * Log4j 
+   * Unit Testing
+     * JUnit - 80% code coverage goal
+   * Independent Research
+     * Sending alerts via SMS and email
+     * Performance Visualization via visual VM
     
     
     
