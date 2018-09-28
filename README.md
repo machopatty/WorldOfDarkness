@@ -6,18 +6,34 @@ Running games across several environments makes coordinating with players for ch
 
 This project is just beginning.  Currently having no real content at all.
 
-
-
-* Security/Roles
-  * Admin Role - CRUD all items except roles.
-  * GM - create games, add XP to characters, approve characters that they don't own.
-  * Player - crud own characters.
-  
-* web design
-   * CSS
-   * Bootstrap
-   
- * Need to do the email thing as well.
+* Technologies
+    * Security/Roles
+      * Tomcat's JDBC Realm Authorization
+      * Admin Role - CRUD all items except roles.
+      * GM - create games, add XP to characters, approve characters that they don't own.
+      * Player - crud own characters.
+   * Database
+     * mySQL
+     * Stores details about players, Game Masters, admin and Characters
+     * Stores summary of certain rules.
+     * Hibernate
+   * web design
+     * Custom CSS
+     * Bootstrap
+     * Java Script
+     * HTML 5      
+     * Need to do the email thing as well.
+  * Dependency Management
+    * Maven
+  * IDE
+    * intelij IDEA
+  * Logging
+    * Log4j 
+  * Unit Testing
+    * JUnit - 80% code coverage goal
+    
+    
+    
    
 
 * Screen Design
