@@ -44,5 +44,8 @@ This project is just beginning.  Currently having no real content at all.
   * [Admin screen](Screen_Design/admin_screen.png)
   * [Game Master Screen](Screen_Design/GM_screen.png)
   * [Player Screen](Screen_Design/player_screen.png)
-  * [Character Aproval Screen](Screen_Design/character_aproval_screen.png)
+  * [Character Approval Screen](Screen_Design/character_aproval_screen.png)
   * [Character Creation Screen](Screen_Design/character_creation_screen.png)
+  * [Account Creation and update Screen](Screen_Design/create_update_account_screen.png)
+  * [User Management Screen](Screen_Design/user_manager_screen.png)
+      
