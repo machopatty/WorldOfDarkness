@@ -6,6 +6,8 @@ Running games across several environments makes coordinating with players for ch
 
 This project is just beginning.  Currently having no real content at all.
 
+
+
 * Security/Roles
   * Admin Role - CRUD all items except roles.
   * GM - create games, add XP to characters, approve characters that they don't own.
@@ -19,3 +21,9 @@ This project is just beginning.  Currently having no real content at all.
    
 
 
+[Login Page](Screen_Design/Login.png)
+[Admin screen](Screen_Design/admin_screen.png)
+[Game Master Screen](Screen_Design/GM_screen.png)
+[Player Screen](Screen_Design/player_screen.png)
+[Character Aproval Screen](Screen_Design/character_aproval_screen.png)
+[Character Creation Screen](Screen_Design/character_creation_screen.png)
