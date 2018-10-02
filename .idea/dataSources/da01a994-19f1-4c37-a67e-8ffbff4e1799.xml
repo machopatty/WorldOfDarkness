@@ -940,14 +940,14 @@ Wraith ???</Comment>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="239" parent="231" name="userName">
+    <column id="239" parent="231" name="user_id">
       <Position>2</Position>
-      <DataType>varchar(25)|0s</DataType>
+      <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <index id="240" parent="231" name="Roles_user">
-      <ColNames>userName</ColNames>
+      <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
     <key id="241" parent="231" name="PRIMARY">
@@ -956,10 +956,10 @@ Wraith ???</Comment>
       <Primary>1</Primary>
     </key>
     <foreign-key id="242" parent="231" name="Roles_user">
-      <ColNames>userName</ColNames>
+      <ColNames>user_id</ColNames>
       <RefSchemaName>WorldOfDarkness</RefSchemaName>
       <RefTableName>user</RefTableName>
-      <RefColNames>userName</RefColNames>
+      <RefColNames>id</RefColNames>
     </foreign-key>
     <column id="243" parent="232" name="traitID">
       <Position>1</Position>
@@ -1089,59 +1089,59 @@ Wraith ???</Comment>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="263" parent="233" name="userName">
+    <column id="263" parent="233" name="firstName">
       <Position>2</Position>
-      <DataType>varchar(25)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="264" parent="233" name="firstName">
-      <Position>3</Position>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="265" parent="233" name="middleName">
+    <column id="264" parent="233" name="middleName">
+      <Position>3</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="265" parent="233" name="lastName">
       <Position>4</Position>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="266" parent="233" name="lastName">
+    <column id="266" parent="233" name="critterID">
       <Position>5</Position>
-      <DataType>varchar(20)|0s</DataType>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="267" parent="233" name="critterID">
+    <column id="267" parent="233" name="unspentExperience">
       <Position>6</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="268" parent="233" name="unspentExperience">
+    <column id="268" parent="233" name="approved">
       <Position>7</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="269" parent="233" name="approved">
-      <Position>8</Position>
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="270" parent="233" name="isDeleted">
-      <Position>9</Position>
+    <column id="269" parent="233" name="isDeleted">
+      <Position>8</Position>
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="271" parent="233" name="character_user">
-      <ColNames>userName</ColNames>
+    <column id="270" parent="233" name="user_id">
+      <Position>9</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="271" parent="233" name="character_critter">
+      <ColNames>critterID</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="272" parent="233" name="character_critter">
-      <ColNames>critterID</ColNames>
+    <index id="272" parent="233" name="character_user">
+      <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
     <key id="273" parent="233" name="PRIMARY">
@@ -1149,17 +1149,17 @@ Wraith ???</Comment>
       <ColNames>characterID</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="274" parent="233" name="character_user">
-      <ColNames>userName</ColNames>
-      <RefSchemaName>WorldOfDarkness</RefSchemaName>
-      <RefTableName>user</RefTableName>
-      <RefColNames>userName</RefColNames>
-    </foreign-key>
-    <foreign-key id="275" parent="233" name="character_critter">
+    <foreign-key id="274" parent="233" name="character_critter">
       <ColNames>critterID</ColNames>
       <RefSchemaName>WorldOfDarkness</RefSchemaName>
       <RefTableName>critter</RefTableName>
       <RefColNames>critterID</RefColNames>
+    </foreign-key>
+    <foreign-key id="275" parent="233" name="character_user">
+      <ColNames>user_id</ColNames>
+      <RefSchemaName>WorldOfDarkness</RefSchemaName>
+      <RefTableName>user</RefTableName>
+      <RefColNames>id</RefColNames>
     </foreign-key>
     <column id="276" parent="234" name="character_characterID">
       <Position>1</Position>
@@ -1325,40 +1325,60 @@ traitID</ColNames>
       <RefTableName>critter</RefTableName>
       <RefColNames>critterID</RefColNames>
     </foreign-key>
-    <column id="303" parent="237" name="firstName">
+    <column id="303" parent="237" name="id">
       <Position>1</Position>
-      <DataType>varchar(20)|0s</DataType>
+      <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="304" parent="237" name="lastName">
+    <column id="304" parent="237" name="firstName">
       <Position>2</Position>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="305" parent="237" name="userName">
+    <column id="305" parent="237" name="lastName">
       <Position>3</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="306" parent="237" name="userName">
+      <Position>4</Position>
+      <Comment>This must also be unique in the database.</Comment>
       <DataType>varchar(25)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="306" parent="237" name="authenticator">
-      <Position>4</Position>
+    <column id="307" parent="237" name="authenticator">
+      <Position>5</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="307" parent="237" name="isDeleted">
-      <Position>5</Position>
+    <column id="308" parent="237" name="EmailAddress">
+      <Position>6</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="309" parent="237" name="phoneNumber">
+      <Position>7</Position>
+      <DataType>char(13)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="310" parent="237" name="isDeleted">
+      <Position>8</Position>
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="308" parent="237" name="PRIMARY">
+    <key id="311" parent="237" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>userName</ColNames>
+      <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
   </database-model>

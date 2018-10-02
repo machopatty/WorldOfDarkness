@@ -1,10 +1,12 @@
 package sescheraun.WorldOfFutureDarkness.generator;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import org.hibernate.annotations.GenericGenerator;
 
-import javax.ejb.Local;
+
 import javax.persistence.*;
-import java.time.LocalDate;
 
 
 
@@ -16,6 +18,8 @@ import java.time.LocalDate;
 @Entity(name="User")
 @Table(name="user")
 public class User {
+
+    private final Logger logger = LogManager.getLogger(this.getClass());
 
     @Column(name = "firstName")
     private String firstName;
@@ -30,6 +34,7 @@ public class User {
 
     @Column(name = "userName")
     private String firstName;
+
 
     /**
      * Instantiates a new User.
@@ -90,5 +95,15 @@ public class User {
      */
     public void setId(int id) {
         this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", id=" + id +
+                ", firstName='" + firstName + '\'' +
+                '}';
     }
 }
