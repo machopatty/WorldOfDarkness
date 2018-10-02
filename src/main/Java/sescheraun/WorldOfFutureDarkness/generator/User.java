@@ -19,6 +19,7 @@ import javax.persistence.*;
 @Table(name="user")
 public class User {
 
+    @Transient
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     @Column(name = "firstName")
@@ -33,7 +34,7 @@ public class User {
     private int id;
 
     @Column(name = "userName")
-    private String firstName;
+    private String userName;
 
 
     /**
