@@ -18,8 +18,6 @@ class UserDAOTest {
 
         Database database = Database.getInstance();
         database.runSQL("cleanDB.sql");
-
-
     }
 
 
@@ -29,8 +27,27 @@ class UserDAOTest {
         assertEquals(5, users.size());
 
     }
-//
-//    @Test
-//    void getUserBy() {
-//    }
+
+    @Test
+    void getUserBy() {
+        List<User> users = dao.getUserBy("lastName", "a");
+        assertEquals(3, users.size());
+    }
+
+    @Test
+    void createUser() {
+
+
+    }
+
+    @Test
+    void updateUser() {
+
+
+    }
+
+    @Test
+    void deleteUser() {
+
+    }
 }

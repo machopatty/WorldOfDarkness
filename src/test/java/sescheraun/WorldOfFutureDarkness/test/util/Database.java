@@ -23,6 +23,7 @@ package sescheraun.WorldOfFutureDarkness.test.util;
 public class Database {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
+
     // create an object of the class Database
     private static Database instance = new Database();
 
@@ -107,7 +108,7 @@ public class Database {
                     break;
                 }
 
-                logger.debug(sql);
+                logger.info(sql);
 
                 stmt.executeUpdate(sql);
 

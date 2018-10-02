@@ -9,7 +9,6 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 
 
-
 /**
  * The user bean
  *
@@ -35,6 +34,45 @@ public class User {
 
     @Column(name = "userName")
     private String userName;
+
+    @Column(name = "isDeleted")
+    private boolean isDeleted;
+
+    /**
+     * Gets user name.
+     *
+     * @return the user name
+     */
+    public String getUserName() {
+        return userName;
+    }
+
+    /**
+     * Sets user name.
+     *
+     * @param userName the user name
+     */
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    /**
+     * Is deleted boolean.
+     *
+     * @return the boolean
+     */
+    public boolean isDeleted() {
+        return isDeleted;
+    }
+
+    /**
+     * Sets deleted.
+     *
+     * @param deleted the deleted
+     */
+    public void setDeleted(boolean deleted) {
+        isDeleted = deleted;
+    }
 
 
     /**
@@ -80,6 +118,8 @@ public class User {
         this.lastName = lastName;
     }
 
+
+
     /**
      * Gets id.
      *
@@ -101,10 +141,11 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                ", firstName='" + firstName + '\'' +
+                "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", id=" + id +
-                ", firstName='" + firstName + '\'' +
+                ", userName='" + userName + '\'' +
+                ", isDeleted=" + isDeleted +
                 '}';
     }
 }
