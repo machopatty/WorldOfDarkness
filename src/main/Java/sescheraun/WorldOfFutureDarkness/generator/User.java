@@ -9,6 +9,8 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 
+import static java.sql.Types.NULL;
+
 
 /**
  * The user bean

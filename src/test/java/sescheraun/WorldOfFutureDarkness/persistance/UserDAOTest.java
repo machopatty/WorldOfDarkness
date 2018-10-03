@@ -1,9 +1,11 @@
 package sescheraun.WorldOfFutureDarkness.persistance;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+
 import sescheraun.WorldOfFutureDarkness.generator.User;
 import sescheraun.WorldOfFutureDarkness.test.util.Database;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
@@ -43,21 +45,27 @@ class UserDAOTest {
     @Test
     void createUser() {
 
+
+
         User newUser = new User();
         newUser.setFirstName("Captain");
         newUser.setLastName("Caveman");
         newUser.setUserName("CaveyWavey");
         newUser.setAuthenticator("cowabunga");
         newUser.setEmailAddress("TalkToTheClub@OneMillion.BC");
+        newUser.setPhoneNumber("608-555-1234");
         newUser.setIsDeleted(false);
 
         int id = dao.createUser(newUser);
 
-        assertNotEquals(0, id);
+        assertNotEquals(0,id);
+        User insertedUser = dao.getById(id);
+        assertEquals("Captain", insertedUser.getFirstName());
 
-        User user = dao.getById(id);
+        List<User> users = dao.getAllUsers();
 
-        assertEquals("Captain", user.getFirstName());
+        assertEquals(6, users.size());
+
 
 
     }
@@ -65,11 +73,29 @@ class UserDAOTest {
     @Test
     void updateUser() {
 
+        String newName = "Super";
+
+        User user = dao.getById(1);
+
+        user.setFirstName(newName);
+
+        dao.updateUser(user);
+
+        dao.getById(1);
+
+        assertEquals("Super", user.getFirstName());
+
 
     }
 
     @Test
     void deleteUser() {
+        User user = dao.deleteUser(1);
 
+        assertEquals(true, user.getIsDeleted());
+
+//        List<User> users = dao.getAllUsers();
+//
+//        assertEquals(4, users.size());
     }
 }

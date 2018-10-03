@@ -5,11 +5,12 @@ import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-import sescheraun.WorldOfFutureDarkness.generator.User;
 
 import javax.persistence.criteria.*;
-
 import java.util.List;
+import sescheraun.WorldOfFutureDarkness.generator.User;
+
+
 
 public class UserDAO {
 
@@ -72,5 +73,18 @@ public class UserDAO {
         return id;
     }
 
+    public User deleteUser(int id){
+        User userToDelete = getById(id);
+
+        userToDelete.setIsDeleted(true);
+
+        return userToDelete;
+    }
+
+    public void updateUser(User user){
+        Session session = sessionFactory.openSession();
+        session.saveOrUpdate(user);
+        session.close();
+    }
 
 }
