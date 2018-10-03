@@ -32,7 +32,7 @@ class UserDAOTest {
     @Test
     void getAllUsers(){
         List<User> users = dao.getAllUsers();
-        assertEquals(5, users.size());
+        assertEquals(4, users.size());
 
     }
 
@@ -64,7 +64,7 @@ class UserDAOTest {
 
         List<User> users = dao.getAllUsers();
 
-        assertEquals(6, users.size());
+        assertEquals(5, users.size());
 
 
 
@@ -90,12 +90,12 @@ class UserDAOTest {
 
     @Test
     void deleteUser() {
-        User user = dao.deleteUser(1);
+        dao.deleteUser(1);
 
-        assertEquals(true, user.getIsDeleted());
+        //assertEquals(true, user.getIsDeleted());
 
-//        List<User> users = dao.getAllUsers();
-//
-//        assertEquals(4, users.size());
+        List<User> users = dao.getAllUsers();
+
+        assertEquals(3, users.size());
     }
 }

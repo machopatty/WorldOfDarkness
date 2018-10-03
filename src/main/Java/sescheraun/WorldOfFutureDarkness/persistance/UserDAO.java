@@ -73,17 +73,27 @@ public class UserDAO {
         return id;
     }
 
-    public User deleteUser(int id){
+    public void deleteUser(int id){
         User userToDelete = getById(id);
-
         userToDelete.setIsDeleted(true);
 
-        return userToDelete;
+        logger.debug("=====================================================================================");
+        logger.debug(userToDelete);
+        logger.debug("=====================================================================================");
+
+//        Session session = sessionFactory.openSession();
+//        session.beginTransaction();
+//        session.saveOrUpdate(userToDelete);
+//        session.getTransaction().commit();
+//        session.close();
+        updateUser(userToDelete);
     }
 
     public void updateUser(User user){
         Session session = sessionFactory.openSession();
+        session.beginTransaction();
         session.saveOrUpdate(user);
+        session.getTransaction().commit();
         session.close();
     }
 

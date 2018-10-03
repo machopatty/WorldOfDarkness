@@ -3,14 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="4238e867-21db-4eed-ab29-ef019723e501" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20181002 23:39.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20181002 23:40.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20181002 23:41.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/generator/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/generator/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/WorldOfDarkness.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20181003 12:04.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20181003 12:07.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20181003 12:09.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/persistance/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/persistance/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/sescheraun/WorldOfFutureDarkness/persistance/SessionFactoryProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/sescheraun/WorldOfFutureDarkness/persistance/UserDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sescheraun/WorldOfFutureDarkness/persistance/UserDAOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/cleanDB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/cleanDB.sql" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,6 +23,9 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/indieproject$UserDAOTest_getByID.ic" NAME="UserDAOTest.getByID Coverage Results" MODIFIED="1538541697911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>sescheraun.WorldOfFutureDarkness.persistance.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/indieproject$UserDAOTest.ic" NAME="UserDAOTest Coverage Results" MODIFIED="1538601036309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>sescheraun.WorldOfFutureDarkness.persistance.*</FILTER>
     </SUITE>
   </component>
@@ -66,7 +70,7 @@
     <session id="-220995720">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.17" value="1" />
@@ -76,22 +80,23 @@
           <entry key="project.open.time.48" value="2" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.60" value="1" />
+          <entry key="project.open.time.65" value="1" />
           <entry key="project.open.time.67" value="1" />
           <entry key="project.open.time.78" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="28" />
+          <entry key="java" value="37" />
           <entry key="jsp" value="1" />
-          <entry key="log" value="16" />
+          <entry key="log" value="22" />
           <entry key="md" value="5" />
           <entry key="placeholder" value="1" />
           <entry key="png" value="4" />
-          <entry key="properties" value="7" />
-          <entry key="sql" value="9" />
+          <entry key="properties" value="9" />
+          <entry key="sql" value="10" />
           <entry key="txt" value="2" />
           <entry key="user" value="1" />
           <entry key="xml" value="9" />
@@ -101,33 +106,33 @@
         <counts>
           <entry key="Database Element" value="1" />
           <entry key="Image" value="4" />
-          <entry key="JAVA" value="28" />
+          <entry key="JAVA" value="37" />
           <entry key="JSP" value="1" />
           <entry key="Markdown" value="5" />
-          <entry key="PLAIN_TEXT" value="19" />
-          <entry key="Properties" value="7" />
-          <entry key="SQL" value="3" />
+          <entry key="PLAIN_TEXT" value="25" />
+          <entry key="Properties" value="9" />
+          <entry key="SQL" value="4" />
           <entry key="Scratch" value="6" />
           <entry key="XML" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3033" />
+          <entry key="java" value="3288" />
           <entry key="md" value="1904" />
-          <entry key="properties" value="114" />
-          <entry key="sql" value="594" />
+          <entry key="properties" value="132" />
+          <entry key="sql" value="608" />
           <entry key="txt" value="57" />
           <entry key="xml" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3033" />
+          <entry key="JAVA" value="3288" />
           <entry key="Markdown" value="1904" />
           <entry key="PLAIN_TEXT" value="57" />
-          <entry key="Properties" value="114" />
-          <entry key="SQL" value="593" />
+          <entry key="Properties" value="132" />
+          <entry key="SQL" value="607" />
           <entry key="Scratch" value="1" />
           <entry key="XML" value="52" />
         </counts>
@@ -143,8 +148,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/persistance/UserDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
+            <state relative-caret-position="1782">
+              <caret line="99" column="1" lean-forward="true" selection-start-line="99" selection-start-column="1" selection-end-line="99" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -155,33 +160,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/sescheraun/WorldOfFutureDarkness/persistance/UserDAOTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="93" column="8" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="8" />
+            <state relative-caret-position="1638">
+              <caret line="91" column="13" selection-start-line="91" selection-end-line="92" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.0.0/junit-platform-commons-1.0.0-sources.jar!/org/junit/platform/commons/util/ReflectionUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="391" selection-start-line="391" selection-end-line="391" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/generator/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="187" column="15" lean-forward="true" selection-start-line="187" selection-start-column="15" selection-end-line="187" selection-end-column="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3568#3569#0" expanded="true" />
-                <element signature="e#3593#3594#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -219,15 +201,15 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/da01a994-19f1-4c37-a67e-8ffbff4e1799/console_1.sql" />
         <option value="$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/persistance/SessionFactorProvider.java" />
         <option value="$PROJECT_DIR$/src/test/resources/database.properties" />
-        <option value="$PROJECT_DIR$/src/test/resources/cleanDB.sql" />
-        <option value="$PROJECT_DIR$/src/main/resources/log4j2.properties" />
         <option value="$PROJECT_DIR$/src/test/resources/log4j2.properties" />
         <option value="$PROJECT_DIR$/src/test/java/sescheraun/WorldOfFutureDarkness/test/util/Database.java" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/generator/User.java" />
-        <option value="$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/persistance/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/cleanDB.sql" />
         <option value="$PROJECT_DIR$/src/test/java/sescheraun/WorldOfFutureDarkness/persistance/UserDAOTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j2.properties" />
+        <option value="$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/persistance/UserDAO.java" />
       </list>
     </option>
   </component>
@@ -273,8 +255,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -375,7 +358,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -383,7 +365,7 @@
     <property name="SearchEverywhereHistoryKey" value="trail&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538586592853" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538601035912" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="database.console.LAST_STATE" value="false" />
@@ -474,7 +456,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserDAOTest.getByID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserDAOTest.getAllUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="indieproject" />
       <extension name="coverage">
         <pattern>
@@ -484,7 +466,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="sescheraun.WorldOfFutureDarkness.persistance" />
       <option name="MAIN_CLASS_NAME" value="sescheraun.WorldOfFutureDarkness.persistance.UserDAOTest" />
-      <option name="METHOD_NAME" value="getByID" />
+      <option name="METHOD_NAME" value="getAllUsers" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -509,17 +491,17 @@
     <list>
       <item itemvalue="JUnit.UserDAOTest" />
       <item itemvalue="JUnit.UserDAOTest.createUser" />
-      <item itemvalue="JUnit.UserDAOTest.getByID" />
       <item itemvalue="JUnit.UserDAOTest.deleteUser" />
       <item itemvalue="JUnit.UserDAOTest.updateUser" />
+      <item itemvalue="JUnit.UserDAOTest.getAllUsers" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.UserDAOTest" />
         <item itemvalue="JUnit.UserDAOTest.deleteUser" />
-        <item itemvalue="JUnit.UserDAOTest.updateUser" />
+        <item itemvalue="JUnit.UserDAOTest.getAllUsers" />
         <item itemvalue="JUnit.UserDAOTest.createUser" />
-        <item itemvalue="JUnit.UserDAOTest.getByID" />
+        <item itemvalue="JUnit.UserDAOTest.updateUser" />
       </list>
     </recent_temporary>
   </component>
@@ -545,50 +527,60 @@
       <workItem from="1538514232772" duration="6734000" />
       <workItem from="1538539504890" duration="4074000" />
       <workItem from="1538543639078" duration="212000" />
-      <workItem from="1538580305980" duration="6115000" />
+      <workItem from="1538580305980" duration="6493000" />
+      <workItem from="1538597487268" duration="3530000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserDAOTest_createUser - 2018.10.03 at 11h 22m 39s.xml">
-      <configuration name="UserDAOTest.createUser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDAOTest_createUser - 2018.10.03 at 11h 24m 37s.xml">
-      <configuration name="UserDAOTest.createUser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDAOTest_createUser - 2018.10.03 at 11h 25m 33s.xml">
-      <configuration name="UserDAOTest.createUser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDAOTest_createUser - 2018.10.03 at 11h 25m 53s.xml">
-      <configuration name="UserDAOTest.createUser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDAOTest_deleteUser - 2018.10.03 at 11h 48m 41s.xml">
+    <history-entry file="UserDAOTest_deleteUser - 2018.10.03 at 15h 46m 57s.xml">
       <configuration name="UserDAOTest.deleteUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDAOTest_updateUser - 2018.10.03 at 11h 53m 01s.xml">
-      <configuration name="UserDAOTest.updateUser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDAOTest_updateUser - 2018.10.03 at 11h 53m 27s.xml">
-      <configuration name="UserDAOTest.updateUser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDAOTest_deleteUser - 2018.10.03 at 11h 53m 43s.xml">
+    <history-entry file="UserDAOTest_deleteUser - 2018.10.03 at 15h 48m 39s.xml">
       <configuration name="UserDAOTest.deleteUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDAOTest_deleteUser - 2018.10.03 at 12h 03m 27s.xml">
+    <history-entry file="UserDAOTest_deleteUser - 2018.10.03 at 15h 49m 49s.xml">
       <configuration name="UserDAOTest.deleteUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDAOTest_deleteUser - 2018.10.03 at 12h 05m 31s.xml">
+    <history-entry file="UserDAOTest_deleteUser - 2018.10.03 at 15h 51m 05s.xml">
+      <configuration name="UserDAOTest.deleteUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDAOTest_deleteUser - 2018.10.03 at 15h 52m 02s.xml">
+      <configuration name="UserDAOTest.deleteUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDAOTest_deleteUser - 2018.10.03 at 15h 53m 24s.xml">
+      <configuration name="UserDAOTest.deleteUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDAOTest_deleteUser - 2018.10.03 at 15h 53m 37s.xml">
+      <configuration name="UserDAOTest.deleteUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDAOTest_deleteUser - 2018.10.03 at 15h 55m 45s.xml">
+      <configuration name="UserDAOTest.deleteUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDAOTest_deleteUser - 2018.10.03 at 15h 58m 43s.xml">
+      <configuration name="UserDAOTest.deleteUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDAOTest_deleteUser - 2018.10.03 at 16h 06m 22s.xml">
       <configuration name="UserDAOTest.deleteUser" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59844000" />
+    <option name="totallyTimeSpent" value="63752000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="56" y="-11" width="1865" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26527244" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26857457" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -598,17 +590,17 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3294979" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3294979" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3294979" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="5" />
-      <window_info anchor="bottom" id="Terminal" order="6" weight="0.3211297" />
+      <window_info anchor="bottom" id="TODO" order="5" weight="0.3294979" />
+      <window_info anchor="bottom" id="Terminal" order="6" weight="0.3828452" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.3294979" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.3294979" />
       <window_info anchor="bottom" id="Database Changes" order="10" weight="0.3294979" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Debug" order="12" visible="true" weight="0.39958158" />
+      <window_info anchor="bottom" id="Debug" order="12" weight="0.39958158" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.3294979" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -624,43 +616,6 @@
       <window_info anchor="right" id="Bean Validation" order="11" />
       <window_info anchor="right" id="Coverage" order="12" sideWeight="0.50078005" side_tool="true" weight="0.2305999" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26197028" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3294979" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3294979" />
-      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="5" />
-      <window_info anchor="bottom" id="Terminal" order="6" weight="0.3211297" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.3294979" />
-      <window_info anchor="bottom" id="Java Enterprise" order="9" />
-      <window_info anchor="bottom" id="Database Changes" order="10" weight="0.3294979" />
-      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Debug" order="12" visible="true" weight="0.39958158" />
-      <window_info anchor="bottom" id="Database Console" order="13" weight="0.3294979" />
-      <window_info anchor="right" id="Coverage" order="0" sideWeight="0.50078005" side_tool="true" weight="0.2305999" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="JSF" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info anchor="right" id="Database" order="10" sideWeight="0.49921995" visible="true" weight="0.2305999" />
-      <window_info anchor="right" id="CDI" order="11" />
-      <window_info anchor="right" id="Bean Validation" order="12" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -671,12 +626,19 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/persistance/UserDAO.java</url>
+          <line>87</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.Gitignor.txt" />
-    <entry file="file://$PROJECT_DIR$/.gitignor.txt" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Screen_Design/Login.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -774,13 +736,6 @@
     <entry file="file://$PROJECT_DIR$/logs/hibernate_20181002 17:11.log" />
     <entry file="file://$PROJECT_DIR$/logs/hibernate_20181002 17:13.log" />
     <entry file="file://$PROJECT_DIR$/logs/hibernate_20181002 17:15.log" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/sescheraun/WorldOfFutureDarkness/test/util/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1710">
-          <caret line="110" column="28" selection-start-line="110" selection-start-column="28" selection-end-line="110" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logs/WorldOfDarknessTest.log" />
     <entry file="file://$PROJECT_DIR$/src/test/java/sescheraun/WorldOfFutureDarkness/persistance/SessionFactoryProvider.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0-sources.jar!/org/apache/logging/log4j/LogManager.java">
@@ -824,35 +779,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/cleanDB.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="89" selection-end-line="41" selection-end-column="196" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/generator/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="187" column="15" lean-forward="true" selection-start-line="187" selection-start-column="15" selection-end-line="187" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3568#3569#0" expanded="true" />
-            <element signature="e#3593#3594#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-engine/5.0.0/junit-jupiter-engine-5.0.0-sources.jar!/org/junit/jupiter/engine/execution/ThrowableCollector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/WorldOfDarkness.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -863,17 +789,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/generator/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="668">
-          <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+        <state relative-caret-position="2700">
+          <caret line="187" column="15" selection-start-line="187" selection-start-column="15" selection-end-line="187" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-engine/5.0.0/junit-jupiter-engine-5.0.0-sources.jar!/org/junit/jupiter/engine/descriptor/TestMethodTestDescriptor.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.2.12.Final/hibernate-core-5.2.12.Final-sources.jar!/org/hibernate/internal/SessionFactoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
-          <caret line="111" selection-start-line="111" selection-end-line="111" />
+          <caret line="449" selection-start-line="449" selection-end-line="449" />
+          <folding>
+            <element signature="e#19628#19629#0" expanded="true" />
+            <element signature="e#19672#19673#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/hibernate_20181003 15:35.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10110" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/cleanDB.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="32" column="133" lean-forward="true" selection-start-line="32" selection-start-column="133" selection-end-line="32" selection-end-column="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="50" column="23" lean-forward="true" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/WorldOfDarkness.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2680" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/sescheraun/WorldOfFutureDarkness/test/util/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="110" selection-start-line="110" selection-end-line="111" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.2.12.Final/hibernate-core-5.2.12.Final-sources.jar!/org/hibernate/internal/SessionImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="405" selection-start-line="405" selection-end-line="405" />
         </state>
       </provider>
     </entry>
@@ -884,10 +858,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-engine/5.0.0/junit-jupiter-engine-5.0.0-sources.jar!/org/junit/jupiter/engine/execution/ThrowableCollector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-engine/5.0.0/junit-jupiter-engine-5.0.0-sources.jar!/org/junit/jupiter/engine/descriptor/TestMethodTestDescriptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="111" selection-start-line="111" selection-end-line="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-engine/1.0.0/junit-platform-engine-1.0.0-sources.jar!/org/junit/platform/engine/support/hierarchical/SingleTestExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-engine/1.0.0/junit-platform-engine-1.0.0-sources.jar!/org/junit/platform/engine/support/hierarchical/HierarchicalTestExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="e#1914#1915#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-engine/1.0.0/junit-platform-engine-1.0.0-sources.jar!/org/junit/platform/engine/support/hierarchical/HierarchicalTestEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-launcher/1.0.0/junit-platform-launcher-1.0.0-sources.jar!/org/junit/platform/launcher/core/DefaultLauncher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/persistance/UserDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
+        <state relative-caret-position="1782">
+          <caret line="99" column="1" lean-forward="true" selection-start-line="99" selection-start-column="1" selection-end-line="99" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -896,8 +915,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/sescheraun/WorldOfFutureDarkness/persistance/UserDAOTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="93" column="8" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="8" />
+        <state relative-caret-position="1638">
+          <caret line="91" column="13" selection-start-line="91" selection-end-line="92" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
