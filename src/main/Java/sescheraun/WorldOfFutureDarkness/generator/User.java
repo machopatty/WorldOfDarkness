@@ -3,6 +3,7 @@ package sescheraun.WorldOfFutureDarkness.generator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import org.hibernate.annotations.CollectionId;
 import org.hibernate.annotations.GenericGenerator;
 
 
@@ -38,6 +39,69 @@ public class User {
     @Column(name = "isDeleted")
     private boolean isDeleted;
 
+    @Column(name = "authenticator")
+    private String authenticator;
+
+    @Column(name = "EmailAddress")
+    private String emailAddress;
+
+    @Column(name = "phoneNumber")
+    private String phoneNumber;
+
+    /**
+     * Gets email address.
+     *
+     * @return the email address
+     */
+    public String getEmailAddress() {
+        return emailAddress;
+    }
+
+    /**
+     * Sets email address.
+     *
+     * @param emailAddress the email address
+     */
+    public void setEmailAddress(String emailAddress) {
+        this.emailAddress = emailAddress;
+    }
+
+    /**
+     * Gets phone number.
+     *
+     * @return the phone number
+     */
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    /**
+     * Sets phone number.
+     *
+     * @param phoneNumber the phone number
+     */
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    /**
+     * Gets authenticator.
+     *
+     * @return the authenticator
+     */
+    public String getAuthenticator() {
+        return authenticator;
+    }
+
+    /**
+     * Sets authenticator.
+     *
+     * @param authenticator the authenticator
+     */
+    public void setAuthenticator(String authenticator) {
+        this.authenticator = authenticator;
+    }
+
     /**
      * Gets user name.
      *
@@ -61,7 +125,7 @@ public class User {
      *
      * @return the boolean
      */
-    public boolean isDeleted() {
+    public boolean getIsDeleted() {
         return isDeleted;
     }
 
@@ -70,7 +134,7 @@ public class User {
      *
      * @param deleted the deleted
      */
-    public void setDeleted(boolean deleted) {
+    public void setIsDeleted(boolean deleted) {
         isDeleted = deleted;
     }
 
@@ -117,8 +181,6 @@ public class User {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-
-
 
     /**
      * Gets id.

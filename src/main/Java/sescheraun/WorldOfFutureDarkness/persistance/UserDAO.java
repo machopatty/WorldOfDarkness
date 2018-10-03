@@ -52,6 +52,8 @@ public class UserDAO {
 
     /**
      * Get user by id
+     *
+     * @return the user that matches the ID
      */
     public User getById(int id) {
         Session session = sessionFactory.openSession();
@@ -59,5 +61,16 @@ public class UserDAO {
         session.close();
         return user;
     }
+
+    public int createUser(User user){
+        int id = 0;
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
+        id = (int)session.save(user);
+        transaction.commit();
+        session.close();
+        return id;
+    }
+
 
 }

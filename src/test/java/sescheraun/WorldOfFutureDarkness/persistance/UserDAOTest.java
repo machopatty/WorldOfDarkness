@@ -22,6 +22,12 @@ class UserDAOTest {
 
 
     @Test
+    void getByID() {
+        User user = dao.getById(4);
+        assertEquals("Allard", user.getLastName());
+    }
+
+    @Test
     void getAllUsers(){
         List<User> users = dao.getAllUsers();
         assertEquals(5, users.size());
@@ -36,6 +42,22 @@ class UserDAOTest {
 
     @Test
     void createUser() {
+
+        User newUser = new User();
+        newUser.setFirstName("Captain");
+        newUser.setLastName("Caveman");
+        newUser.setUserName("CaveyWavey");
+        newUser.setAuthenticator("cowabunga");
+        newUser.setEmailAddress("TalkToTheClub@OneMillion.BC");
+        newUser.setIsDeleted(false);
+
+        int id = dao.createUser(newUser);
+
+        assertNotEquals(0, id);
+
+        User user = dao.getById(id);
+
+        assertEquals("Captain", user.getFirstName());
 
 
     }
