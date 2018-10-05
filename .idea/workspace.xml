@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4238e867-21db-4eed-ab29-ef019723e501" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/generator/Critter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/generator/SubCritter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6b4a9013-02dd-42ab-92d4-f4b101ab2803.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6b4a9013-02dd-42ab-92d4-f4b101ab2803.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/generator/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/generator/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml" afterDir="false" />
-    </list>
+    <list default="true" id="4238e867-21db-4eed-ab29-ef019723e501" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -78,7 +69,7 @@
     <session id="-220995720">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="15" />
+          <entry key="project.closed" value="16" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.13" value="1" />
@@ -162,7 +153,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/generator/Critter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
+            <state relative-caret-position="81">
               <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -323,9 +314,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="56" />
-    <option name="y" value="-11" />
-    <option name="width" value="969" />
+    <option name="x" value="532" />
+    <option name="y" value="187" />
+    <option name="width" value="959" />
     <option name="height" value="780" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -569,7 +560,7 @@
     <property name="SearchEverywhereHistoryKey" value="Sub&#9;PSI&#9;JAVA://sescheraun.WorldOfFutureDarkness.generator.SubCritter&#10;trail&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538770282046" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538772147022" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="database.console.LAST_STATE" value="false" />
@@ -735,7 +726,7 @@
       <workItem from="1538597487268" duration="4053000" />
       <workItem from="1538601757704" duration="883000" />
       <workItem from="1538754969690" duration="354000" />
-      <workItem from="1538761704425" duration="6705000" />
+      <workItem from="1538761704425" duration="7888000" />
     </task>
     <servers />
   </component>
@@ -772,7 +763,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72217000" />
+    <option name="totallyTimeSpent" value="73400000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -785,9 +776,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="59" y="25" width="1861" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27823693" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27823693" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -801,7 +791,7 @@
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.3294979" />
-      <window_info anchor="bottom" id="Terminal" order="6" visible="true" weight="0.3827027" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="6" visible="true" weight="0.3827027" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.3294979" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.3294979" />
@@ -1222,7 +1212,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/generator/Critter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
+        <state relative-caret-position="81">
           <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
           <folding>
             <element signature="imports" expanded="true" />
