@@ -926,15 +926,10 @@
     <table id="234" parent="3" name="character"/>
     <table id="235" parent="3" name="characterTraits"/>
     <table id="236" parent="3" name="critter">
-      <Comment>Human, vampire, Changeling ect...
-</Comment>
+      <Comment>Human, vampire, Changeling ect...</Comment>
     </table>
     <table id="237" parent="3" name="subCritter">
-      <Comment>Vampire : clan
-Werewolf: tribe, auspice, breed
-Changeling: Kith, seeming, house
-mage: tradition/convention
-Wraith ???</Comment>
+      <Comment>Vampire : clan Werewolf: tribe, auspice, breed Changeling: Kith, seeming, house mage: tradition/conventionWraith ???</Comment>
     </table>
     <table id="238" parent="3" name="user"/>
     <column id="239" parent="232" name="roleID">
@@ -1282,19 +1277,18 @@ traitID</ColNames>
     </column>
     <column id="296" parent="237" name="critterSubName">
       <Position>4</Position>
-      <Comment>Pooka, Gangrel, Get of Fenris ect..
-</Comment>
+      <Comment>Pooka, Gangrel, Get of Fenris ect..</Comment>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="297" parent="237" name="first_advantage">
+    <column id="297" parent="237" name="first_Advantage">
       <Position>5</Position>
       <DataType>varchar(500)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="298" parent="237" name="secondAdvantage">
+    <column id="298" parent="237" name="second_Advantage">
       <Position>6</Position>
       <DataType>varchar(500)|0s</DataType>
       <NotNull>1</NotNull>
