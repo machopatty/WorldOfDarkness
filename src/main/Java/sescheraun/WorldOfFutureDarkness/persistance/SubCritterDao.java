@@ -33,7 +33,7 @@ public class SubCritterDao {
         return subCritters;
     }
 
-    public List<User> getSubCritterBy(String field, String value) {
+    public List<SubCritter> getSubCritterBy(String field, String value) {
 
         Session session = sessionFactory.openSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
@@ -56,7 +56,7 @@ public class SubCritterDao {
      *
      * @return the user that matches the ID
      */
-    public User getById(int id) {
+    public SubCritter getById(int id) {
         Session session = sessionFactory.openSession();
         SubCritter subCritter = session.get( SubCritter.class, id );
         session.close();
@@ -74,9 +74,9 @@ public class SubCritterDao {
     }
 
     public void deleteSubCritter(int id){
-        Critter critterToDelete = getById(id);
-        critterToDelete.setIsDeleted(true);
-        updateSubCritter(critterToDelete);
+        SubCritter subCritterToDelete = getById(id);
+        subCritterToDelete.setIsDeleted(true);
+        updateSubCritter(subCritterToDelete);
     }
 
     public void updateSubCritter(SubCritter subCritter){

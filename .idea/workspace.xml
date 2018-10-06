@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4238e867-21db-4eed-ab29-ef019723e501" name="Default Changelist" comment="" />
+    <list default="true" id="4238e867-21db-4eed-ab29-ef019723e501" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/persistance/CritterDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/persistance/CritterDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/persistance/SubCritterDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/persistance/SubCritterDao.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -86,7 +89,8 @@
           <entry key="project.open.time.69" value="1" />
           <entry key="project.open.time.78" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="18" />
+          <entry key="project.open.time.92" value="1" />
+          <entry key="project.opened" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -94,7 +98,7 @@
           <entry key="DATABASE/6b4a9013-02dd-42ab-92d4-f4b101ab2803" value="1" />
           <entry key="class" value="1" />
           <entry key="gitignore" value="1" />
-          <entry key="java" value="40" />
+          <entry key="java" value="45" />
           <entry key="jsp" value="1" />
           <entry key="log" value="23" />
           <entry key="md" value="6" />
@@ -112,7 +116,7 @@
           <entry key="CLASS" value="1" />
           <entry key="Database Element" value="1" />
           <entry key="Image" value="4" />
-          <entry key="JAVA" value="40" />
+          <entry key="JAVA" value="45" />
           <entry key="JSP" value="1" />
           <entry key="Markdown" value="6" />
           <entry key="PLAIN_TEXT" value="31" />
@@ -126,7 +130,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="15" />
-          <entry key="java" value="4352" />
+          <entry key="java" value="4874" />
           <entry key="md" value="2779" />
           <entry key="properties" value="132" />
           <entry key="sql" value="618" />
@@ -136,7 +140,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4352" />
+          <entry key="JAVA" value="4874" />
           <entry key="Markdown" value="2779" />
           <entry key="PLAIN_TEXT" value="73" />
           <entry key="Properties" value="132" />
@@ -154,10 +158,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/generator/Critter.java">
+        <entry file="file://$PROJECT_DIR$/target/test-classes/sescheraun/WorldOfFutureDarkness/persistance/UserDAOTest.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="234">
+              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/persistance/SubCritterDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="339">
+              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -166,20 +179,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/target/test-classes/sescheraun/WorldOfFutureDarkness/persistance/UserDAOTest.class">
+        <entry file="file://$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/persistance/UserDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+            <state relative-caret-position="216">
+              <caret line="21" column="19" lean-forward="true" selection-start-line="20" selection-end-line="73" selection-end-column="5" />
               <folding>
-                <element signature="e#0#2254#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logs/WorldOfDarkness.log">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -197,19 +205,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/cleanDB.sql">
+        <entry file="file://$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/persistance/CritterDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="47" column="25" selection-end-line="51" selection-end-column="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/data_files/Leanhaun.boon.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="155" selection-start-column="155" selection-end-column="155" />
+            <state relative-caret-position="216">
+              <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -247,7 +249,6 @@
         <option value="$PROJECT_DIR$/src/test/resources/log4j2.properties" />
         <option value="$PROJECT_DIR$/src/test/java/sescheraun/WorldOfFutureDarkness/test/util/Database.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j2.properties" />
-        <option value="$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/persistance/UserDAO.java" />
         <option value="$PROJECT_DIR$/src/test/java/sescheraun/WorldOfFutureDarkness/persistance/UserDAOTest.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/timeLog.md" />
@@ -262,6 +263,9 @@
         <option value="$PROJECT_DIR$/src/test/resources/data_files/Beaumayn.flaw.txt" />
         <option value="$PROJECT_DIR$/src/main/resources/data_files/Leanhaun.flaw.txt" />
         <option value="$PROJECT_DIR$/src/main/resources/data_files/Leanhaun.boon.txt" />
+        <option value="$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/persistance/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/persistance/CritterDao.java" />
+        <option value="$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/persistance/SubCritterDao.java" />
       </list>
     </option>
   </component>
@@ -305,10 +309,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="532" />
-    <option name="y" value="187" />
-    <option name="width" value="959" />
-    <option name="height" value="780" />
+    <option name="x" value="1" />
+    <option name="y" value="25" />
+    <option name="width" value="799" />
+    <option name="height" value="575" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -333,8 +337,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -556,7 +558,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -580,13 +584,6 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="sescheraun.WorldOfFutureDarkness.persistance" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/Screen Design" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="sescheraun.WorldOfFutureDarkness.persistance" />
     </key>
@@ -596,6 +593,13 @@
       <recent name="$PROJECT_DIR$/Screen_Design" />
       <recent name="$PROJECT_DIR$/Screen_Design/" />
       <recent name="$PROJECT_DIR$/src/test/java" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/Screen Design" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -736,6 +740,7 @@
       <workItem from="1538754969690" duration="354000" />
       <workItem from="1538761704425" duration="7888000" />
       <workItem from="1538773084635" duration="2971000" />
+      <workItem from="1538839581918" duration="3849000" />
     </task>
     <servers />
   </component>
@@ -772,7 +777,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76371000" />
+    <option name="totallyTimeSpent" value="80220000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -785,8 +790,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="59" y="25" width="1861" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945945" visible="true" weight="0.28099173" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945945" visible="true" weight="0.28429753" />
       <window_info id="Structure" order="1" sideWeight="0.50054055" side_tool="true" weight="0.28099173" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -800,7 +806,7 @@
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.3294979" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="6" visible="true" weight="0.3827027" />
+      <window_info anchor="bottom" id="Terminal" order="6" visible="true" weight="0.3827027" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.3294979" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.3294979" />
@@ -869,33 +875,11 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/persistance/UserDAO.java</url>
-          <line>87</line>
-          <properties />
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e4d68ce1-d44b-4545-b5f2-df4d751a9dd8/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/da01a994-19f1-4c37-a67e-8ffbff4e1799/console_1.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2466">
-          <caret line="137" selection-start-line="137" selection-end-line="137" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6b4a9013-02dd-42ab-92d4-f4b101ab2803/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1046,16 +1030,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/persistance/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1638">
-          <caret line="99" column="1" selection-start-line="99" selection-start-column="1" selection-end-line="99" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://DATABASE/6b4a9013-02dd-42ab-92d4-f4b101ab2803">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -1194,41 +1168,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/test-classes/sescheraun/WorldOfFutureDarkness/persistance/UserDAOTest.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#2254#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/WorldOfDarkness.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/generator/Critter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/generator/SubCritter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1997#1998#0" expanded="true" />
-            <element signature="e#2032#2033#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/data_files/Leanhaun.flaw.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -1247,6 +1186,68 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="155" selection-start-column="155" selection-end-column="155" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/WorldOfDarkness.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/generator/Critter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/sescheraun/WorldOfFutureDarkness/persistance/UserDAOTest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/persistance/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="21" column="19" lean-forward="true" selection-start-line="20" selection-end-line="73" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/persistance/CritterDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/generator/SubCritter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1997#1998#0" expanded="true" />
+            <element signature="e#2032#2033#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Java/sescheraun/WorldOfFutureDarkness/persistance/SubCritterDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
