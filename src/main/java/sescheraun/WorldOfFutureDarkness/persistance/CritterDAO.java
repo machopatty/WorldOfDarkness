@@ -1,6 +1,5 @@
 package sescheraun.WorldOfFutureDarkness.persistance;
 
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
@@ -9,15 +8,9 @@ import org.hibernate.Transaction;
 
 import javax.persistence.criteria.*;
 import java.util.List;
-
 import sescheraun.WorldOfFutureDarkness.generator.*;
 
-
-/**
- * The type SubCritter dao.
- */
-public class SubCritterDao {
-
+public class CritterDAO {
     private final Logger logger = LogManager.getLogger(this.getClass());
     /**
      * The Session factory.
@@ -25,99 +18,103 @@ public class SubCritterDao {
     SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
     /**
-     * Get all subCritters list.
+     * Get all critters list.
      *
      * @return the list
      */
-    public List<SubCritter>  getAllSubCritters(){
+    public List<Critter>  getAllCritters(){
         Session session = sessionFactory.openSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
-        CriteriaQuery<SubCritter> query = builder.createQuery(SubCritter.class);
-        Root<SubCritter> root = query.from(SubCritter.class);
+        CriteriaQuery<Critter> query = builder.createQuery(Critter.class);
+        Root<Critter> root = query.from(Critter.class);
 
         Expression<Boolean> isDeleted = root.get("isDeleted");
         query.select(root).where(builder.isFalse(isDeleted));
 
-        List<SubCritter> subCritters = session.createQuery(query).getResultList();
+        List<Critter> critters = session.createQuery(query).getResultList();
         session.close();
 
-        return subCritters;
+
+
+        return critters;
     }
 
     /**
-     * Gets subCritter by.
+     * Gets critter by.
      *
      * @param field the field
      * @param value the value
-     * @return the subCritter by
+     * @return the critter by
      */
-    public List<SubCritter> getSubCritterBy(String field, String value) {
+    public List<Critter> getCritterBy(String field, String value) {
 
         Session session = sessionFactory.openSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
-        CriteriaQuery<SubCritter> query = builder.createQuery(SubCritter.class);
-        Root<SubCritter> root = query.from(SubCritter.class);
+        CriteriaQuery<Critter> query = builder.createQuery(Critter.class);
+        Root<Critter> root = query.from(Critter.class);
         Expression<Boolean> isDeleted = root.get("isDeleted");
         query.select(root).where(builder.isFalse(isDeleted));
 
         Expression<String> propertyPath = root.get(field);
         query.where(builder.like(propertyPath, "%" + value + "%"));
 
-        List<SubCritter> subCritters = session.createQuery(query).getResultList();
+        List<Critter> critters = session.createQuery(query).getResultList();
         session.close();
 
-        return subCritters;
+
+
+        return critters;
     }
 
     /**
-     * Get subCritter by id
+     * Get critter by id
      *
      * @param id the id
-     * @return the subCritter that matches the ID
+     * @return the critter that matches the ID
      */
-    public SubCritter getById(int id) {
+    public Critter getById(int id) {
         Session session = sessionFactory.openSession();
-        SubCritter subCritter = session.get( SubCritter.class, id );
+        Critter critter = session.get( Critter.class, id );
         session.close();
-        return subCritter;
+        return critter;
     }
 
     /**
-     * Create subCritter int.
+     * Create critter int.
      *
-     * @param subCritter the subCritter
+     * @param critter the critter
      * @return the int
      */
-    public int createSubCritter(SubCritter subCritter){
+    public int createCritter(Critter critter){
         int id = 0;
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-        id = (int)session.save(subCritter);
+        id = (int)session.save(critter);
         transaction.commit();
         session.close();
         return id;
     }
 
     /**
-     * Delete subCritter.
+     * Delete critter.
      *
      * @param id the id
      */
-    public void deleteSubCritter(int id){
-        SubCritter subCritterToDelete = getById(id);
-        subCritterToDelete.setIsDeleted(true);
-        updateSubCritter(subCritterToDelete);
+    public void deleteCritter(int id){
+        Critter critterToDelete = getById(id);
+        critterToDelete.setIsDeleted(true);
+        updateCritter(critterToDelete);
     }
 
     /**
-     * Update subCritter.
+     * Update critter.
      *
-     * @param subCritter the subCritter
+     * @param critter the critter
      */
-    public void updateSubCritter(SubCritter subCritter){
+    public void updateCritter(Critter critter){
         Session session = sessionFactory.openSession();
         session.beginTransaction();
-        session.saveOrUpdate(subCritter);
+        session.saveOrUpdate(critter);
         session.getTransaction().commit();
         session.close();
     }

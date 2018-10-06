@@ -27,13 +27,10 @@ public class Critter {
     @GenericGenerator(name = "native",strategy = "native")
     private int critterId;
 
-    @Column(name = "critterName")
     private String critterName;
 
-    @Column(name = "implemented")
     private boolean implemented;
 
-    @Column(name = "isDeleted")
     private boolean isDeleted;
 
     @OneToMany(mappedBy = "critter", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
@@ -134,6 +131,26 @@ public class Critter {
      */
     public void setSubCritters(Set<SubCritter> subCritters) {
         this.subCritters = subCritters;
+    }
+
+    /**
+     * Add sub critter.
+     *
+     * @param subCritter the sub critter
+     */
+    public void addSubCritter (SubCritter subCritter) {
+        subCritter.setCritter(this);
+        subCritters.add(subCritter);
+    }
+
+    /**
+     * Remove sub critter.
+     *
+     * @param subCritter the sub critter
+     */
+    public void removeSubCritter (SubCritter subCritter) {
+        subCritters.remove(subCritter);
+        subCritter.setCritter(null);
     }
 
     @Override

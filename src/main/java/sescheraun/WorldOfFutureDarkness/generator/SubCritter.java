@@ -10,6 +10,8 @@ import javax.persistence.*;
 /**
  * The type Sub critter.
  */
+@Entity(name = "SubCritter")
+@Table(name = "subCritter")
 public class SubCritter {
 
     @Transient
@@ -20,25 +22,21 @@ public class SubCritter {
     @GenericGenerator(name = "native",strategy = "native")
     private int subCritterId;
 
-    @Column(name = "subCritterLabel")
     private String subCritterLabel;
 
     @ManyToOne
+    @JoinColumn(name = "critterID")
     private Critter critter;
 
-    @Column(name = "critterSubName")
     private String critterSubName;
 
-    @Column(name = "first_Advantage")
-    private String first_Advantage;
+    private String firstAdvantage;
 
-    @Column(name = "second_Advantage")
-    private String second_Advantage;
+    @Column(name = "secondAdvantage")
+    private String secondAdvantage;
 
-    @Column(name = "flaw")
     private String flaw;
 
-    @Column(name = "isDeleted")
     private boolean isDeleted;
 
     /**
@@ -53,16 +51,16 @@ public class SubCritter {
      * @param critter          the critter
      * @param subCritterLabel  the sub critter label
      * @param critterSubName   the critter sub name
-     * @param first_Advantage  the first advantage
-     * @param second_Advantage the second advantage
+     * @param firstAdvantage  the first advantage
+     * @param secondAdvantage the second advantage
      * @param flaw             the flaw
      */
-    public SubCritter(Critter critter, String subCritterLabel, String critterSubName, String first_Advantage, String second_Advantage, String flaw) {
+    public SubCritter(Critter critter, String subCritterLabel, String critterSubName, String firstAdvantage, String secondAdvantage, String flaw) {
         this.subCritterLabel = subCritterLabel;
         this.critter = critter;
         this.critterSubName = critterSubName;
-        this.first_Advantage = first_Advantage;
-        this.second_Advantage = second_Advantage;
+        this.firstAdvantage = firstAdvantage;
+        this.secondAdvantage = secondAdvantage;
         this.flaw = flaw;
         this.isDeleted = false;
     }
@@ -144,17 +142,17 @@ public class SubCritter {
      *
      * @return the first advantage
      */
-    public String getFirst_Advantage() {
-        return first_Advantage;
+    public String getFirstAdvantage() {
+        return firstAdvantage;
     }
 
     /**
      * Sets first advantage.
      *
-     * @param first_Advantage the first advantage
+     * @param firstAdvantage the first advantage
      */
-    public void setFirst_Advantage(String first_Advantage) {
-        this.first_Advantage = first_Advantage;
+    public void setFirstAdvantage(String firstAdvantage) {
+        this.firstAdvantage = firstAdvantage;
     }
 
     /**
@@ -162,17 +160,17 @@ public class SubCritter {
      *
      * @return the second advantage
      */
-    public String getSecond_Advantage() {
-        return second_Advantage;
+    public String getSecondAdvantage() {
+        return secondAdvantage;
     }
 
     /**
      * Sets second advantage.
      *
-     * @param second_Advantage the second advantage
+     * @param secondAdvantage the second advantage
      */
-    public void setSecond_Advantage(String second_Advantage) {
-        this.second_Advantage = second_Advantage;
+   public void setSecondAdvantage(String secondAdvantage) {
+        this.secondAdvantage = secondAdvantage;
     }
 
     /**
@@ -218,8 +216,8 @@ public class SubCritter {
                 ", subCritterLabel='" + subCritterLabel + '\'' +
                 ", critter=" + critter +
                 ", critterSubName='" + critterSubName + '\'' +
-                ", first_Advantage='" + first_Advantage + '\'' +
-                ", second_Advantage='" + second_Advantage + '\'' +
+                ", firstAdvantage='" + firstAdvantage + '\'' +
+                ", secondAdvantage='" + secondAdvantage + '\'' +
                 ", flaw='" + flaw + '\'' +
                 ", isDeleted=" + isDeleted +
                 '}';
