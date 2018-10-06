@@ -7,9 +7,6 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 
-
-
-
 /**
  * The user bean
  *
@@ -22,10 +19,8 @@ public class User {
     @Transient
     private final Logger logger = LogManager.getLogger(this.getClass());
 
-    @Column(name = "firstName")
     private String firstName;
 
-    @Column(name = "lastName")
     private String lastName;
 
     @Id
@@ -33,19 +28,14 @@ public class User {
     @GenericGenerator(name = "native",strategy = "native")
     private int id;
 
-    @Column(name = "userName")
     private String userName;
 
-    @Column(name = "isDeleted")
     private boolean isDeleted;
 
-    @Column(name = "authenticator")
     private String authenticator;
 
-    @Column(name = "EmailAddress")
     private String emailAddress;
 
-    @Column(name = "phoneNumber")
     private String phoneNumber;
 
     /**
