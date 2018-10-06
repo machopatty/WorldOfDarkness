@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4238e867-21db-4eed-ab29-ef019723e501" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data_files/Beaumayn.boon.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data_files/Beaumayn.flaw.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data_files/Leanhaun.boon.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data_files/Leanhaun.flaw.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="4238e867-21db-4eed-ab29-ef019723e501" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -75,7 +69,7 @@
     <session id="-220995720">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="16" />
+          <entry key="project.closed" value="17" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.13" value="1" />
@@ -570,7 +564,7 @@
     <property name="SearchEverywhereHistoryKey" value="Sub&#9;PSI&#9;JAVA://sescheraun.WorldOfFutureDarkness.generator.SubCritter&#10;trail&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538775788289" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538775788949" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="database.console.LAST_STATE" value="false" />
@@ -741,7 +735,7 @@
       <workItem from="1538601757704" duration="883000" />
       <workItem from="1538754969690" duration="354000" />
       <workItem from="1538761704425" duration="7888000" />
-      <workItem from="1538773084635" duration="2558000" />
+      <workItem from="1538773084635" duration="2971000" />
     </task>
     <servers />
   </component>
@@ -778,7 +772,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75958000" />
+    <option name="totallyTimeSpent" value="76371000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -791,9 +785,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="59" y="25" width="1861" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945945" visible="true" weight="0.28099173" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945945" visible="true" weight="0.28099173" />
       <window_info id="Structure" order="1" sideWeight="0.50054055" side_tool="true" weight="0.28099173" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -807,7 +800,7 @@
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.3294979" />
-      <window_info anchor="bottom" id="Terminal" order="6" visible="true" weight="0.3827027" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="6" visible="true" weight="0.3827027" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.3294979" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.3294979" />
