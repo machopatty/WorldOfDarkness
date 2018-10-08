@@ -95,7 +95,7 @@ public class SubCritterDAO {
         id = (int)session.save(subCritter);
         transaction.commit();
         session.close();
-        return id;
+         return id;
     }
 
     /**

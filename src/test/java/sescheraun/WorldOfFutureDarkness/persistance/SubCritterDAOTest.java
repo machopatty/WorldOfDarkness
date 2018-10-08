@@ -2,6 +2,7 @@ package sescheraun.WorldOfFutureDarkness.persistance;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.junit.jupiter.api.Assertions;
 import sescheraun.WorldOfFutureDarkness.generator.*;
 import sescheraun.WorldOfFutureDarkness.test.util.Database;
 
@@ -39,6 +40,14 @@ public class SubCritterDAOTest {
         database.runSQL("cleanDB.sql");
         populateSubCritters();
     }
+
+    @Test
+    void getByID() {
+        SubCritter subCritter = dao.getById(1);
+        assertEquals("Sidhe", subCritter.getCritterSubName());
+    }
+
+
 
     /**
      * Get all sub critters.
@@ -81,6 +90,23 @@ public class SubCritterDAOTest {
         assertEquals("Human", newSubCritter.getCritter().getCritterName());
     }
 
+    @Test
+    void updateCritter() {
+        String newName = "igNoble";
+        SubCritter subCritter = dao.getById(1);
+        subCritter.setCritterSubName(newName);
+        dao.updateSubCritter(subCritter);
+        dao.getById(1);
+        Assertions.assertEquals("igNoble", subCritter.getCritterSubName());
+    }
+
+    @Test
+    void deleteSubCritter() {
+        dao.deleteSubCritter(1);
+        List<SubCritter> subCritters = this.dao.getAllSubCritters();
+        Assertions.assertEquals(1, subCritters.size());
+    }
+
 
     /**
      * Populate sub critters list for testing.
@@ -118,6 +144,5 @@ public class SubCritterDAOTest {
 
             logger.debug(index + "===================================================================");
         }
-
     }
 }
