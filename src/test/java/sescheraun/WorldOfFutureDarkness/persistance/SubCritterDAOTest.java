@@ -85,19 +85,19 @@ public class SubCritterDAOTest {
 
         SubCritter newSubCritter = dao.getById(id);
         assertNotNull(newSubCritter);
-        assertEquals(subCritterLabel, newSubCritter.getSubCritterLabel());
+        assertEquals(subCritter, newSubCritter);
         assertNotNull(newSubCritter.getCritter());
-        assertEquals("Human", newSubCritter.getCritter().getCritterName());
+        assertEquals(critter, newSubCritter.getCritter());
     }
 
     @Test
-    void updateCritter() {
+    void updateSubCritter() {
         String newName = "igNoble";
         SubCritter subCritter = dao.getById(1);
         subCritter.setCritterSubName(newName);
         dao.updateSubCritter(subCritter);
-        dao.getById(1);
-        Assertions.assertEquals("igNoble", subCritter.getCritterSubName());
+        SubCritter newSubCritter = dao.getById(1);
+        Assertions.assertEquals(newSubCritter, subCritter);
     }
 
     @Test
@@ -106,7 +106,11 @@ public class SubCritterDAOTest {
         List<SubCritter> subCritters = this.dao.getAllSubCritters();
         Assertions.assertEquals(1, subCritters.size());
     }
-
+    @Test
+    void getSubCritterBy(){
+        List<SubCritter> subCritters = dao.getSubCritterBy("critterSubName", "Sid");
+        assertEquals(1, subCritters.size());
+    }
 
     /**
      * Populate sub critters list for testing.

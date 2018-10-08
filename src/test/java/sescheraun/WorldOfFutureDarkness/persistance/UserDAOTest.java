@@ -78,7 +78,7 @@ class UserDAOTest {
 
         assertNotEquals(0,id);
         User insertedUser = dao.getById(id);
-        assertEquals("Captain", insertedUser.getFirstName());
+        assertEquals(newUser, insertedUser);
 
         List<User> users = dao.getAllUsers();
 
@@ -99,9 +99,9 @@ class UserDAOTest {
 
         dao.updateUser(user);
 
-        dao.getById(1);
+        User testUser = dao.getById(1);
 
-        assertEquals("Super", user.getFirstName());
+        assertEquals(testUser, user);
 
 
     }
