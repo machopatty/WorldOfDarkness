@@ -4,6 +4,7 @@ package sescheraun.WorldOfFutureDarkness.generator;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -143,6 +144,9 @@ public class Critter {
         subCritters.add(subCritter);
     }
 
+
+
+
     /**
      * Remove sub critter.
      *
@@ -151,6 +155,22 @@ public class Critter {
     public void removeSubCritter (SubCritter subCritter) {
         subCritters.remove(subCritter);
         subCritter.setCritter(null);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(critterId, critterName, implemented, isDeleted);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Critter critter = (Critter) o;
+        return critterId == critter.critterId &&
+                implemented == critter.implemented &&
+                isDeleted == critter.isDeleted &&
+                Objects.equals(critterName, critter.critterName);
     }
 
     @Override

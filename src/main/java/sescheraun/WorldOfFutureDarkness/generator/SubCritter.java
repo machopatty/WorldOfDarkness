@@ -6,6 +6,7 @@ import org.apache.logging.log4j.Logger;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.Objects;
 
 /**
  * The type Sub critter.
@@ -48,12 +49,12 @@ public class SubCritter {
     /**
      * Instantiates a new Sub critter.
      *
-     * @param critter          the critter
-     * @param subCritterLabel  the sub critter label
-     * @param critterSubName   the critter sub name
+     * @param critter         the critter
+     * @param subCritterLabel the sub critter label
+     * @param critterSubName  the critter sub name
      * @param firstAdvantage  the first advantage
      * @param secondAdvantage the second advantage
-     * @param flaw             the flaw
+     * @param flaw            the flaw
      */
     public SubCritter(Critter critter, String subCritterLabel, String critterSubName, String firstAdvantage, String secondAdvantage, String flaw) {
         this.subCritterLabel = subCritterLabel;
@@ -169,7 +170,7 @@ public class SubCritter {
      *
      * @param secondAdvantage the second advantage
      */
-   public void setSecondAdvantage(String secondAdvantage) {
+    public void setSecondAdvantage(String secondAdvantage) {
         this.secondAdvantage = secondAdvantage;
     }
 
@@ -207,6 +208,26 @@ public class SubCritter {
      */
     public void setIsDeleted(boolean deleted) {
         isDeleted = deleted;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        SubCritter that = (SubCritter) o;
+        return subCritterId == that.subCritterId &&
+                isDeleted == that.isDeleted &&
+                Objects.equals(subCritterLabel, that.subCritterLabel) &&
+                Objects.equals(critter, that.critter) &&
+                Objects.equals(critterSubName, that.critterSubName) &&
+                Objects.equals(firstAdvantage, that.firstAdvantage) &&
+                Objects.equals(secondAdvantage, that.secondAdvantage) &&
+                Objects.equals(flaw, that.flaw);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(subCritterId, subCritterLabel, critter, critterSubName, firstAdvantage, secondAdvantage, flaw, isDeleted);
     }
 
     @Override

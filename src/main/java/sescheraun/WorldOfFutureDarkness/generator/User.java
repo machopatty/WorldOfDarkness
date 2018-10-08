@@ -6,6 +6,7 @@ import org.apache.logging.log4j.Logger;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.Objects;
 
 /**
  * The user bean
@@ -188,6 +189,26 @@ public class User {
      */
     public void setId(int id) {
         this.id = id;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return id == user.id &&
+                isDeleted == user.isDeleted &&
+                Objects.equals(firstName, user.firstName) &&
+                Objects.equals(lastName, user.lastName) &&
+                Objects.equals(userName, user.userName) &&
+                Objects.equals(authenticator, user.authenticator) &&
+                Objects.equals(emailAddress, user.emailAddress) &&
+                Objects.equals(phoneNumber, user.phoneNumber);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(firstName, lastName, id, userName, isDeleted, authenticator, emailAddress, phoneNumber);
     }
 
     @Override

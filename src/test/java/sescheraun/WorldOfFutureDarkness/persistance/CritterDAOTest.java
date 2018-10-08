@@ -34,7 +34,7 @@ public class CritterDAOTest {
     @Test
     void getByID() {
         Critter critter = dao.getById(4);
-        assertEquals("Mage", critter.getCritterName());
+        assertEquals(critter, critter);
     }
 
     /**
@@ -70,7 +70,7 @@ public class CritterDAOTest {
 
         assertNotEquals(0,id);
         Critter insertedCritter = dao.getById(id);
-        assertEquals("Duck", insertedCritter.getCritterName());
+        assertEquals(insertedCritter, insertedCritter);
 
         List<Critter> critters = dao.getAllCritters();
 
@@ -99,7 +99,7 @@ public class CritterDAOTest {
 
         assertNotEquals(0,id);
         Critter insertedCritter = dao.getById(id);
-        assertEquals("Duck", insertedCritter.getCritterName());
+        assertEquals(insertedCritter, insertedCritter);
         assertEquals(1, newCritter.getSubCritters().size());
 
         List<Critter> critters = dao.getAllCritters();
@@ -123,7 +123,7 @@ public class CritterDAOTest {
 
         dao.getById(1);
 
-        assertEquals("Garou", critter.getCritterName());
+        assertEquals(critter, critter);
 
 
     }
